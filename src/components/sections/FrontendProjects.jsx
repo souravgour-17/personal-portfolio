@@ -10,20 +10,7 @@ const frontendProjects = [
     liveLink: "https://souravgour-17.github.io/coming-soon/",
     codeLink: "https://github.com/souravgour-17/coming-soon"
   },
-  {
-    title: "Emoji Flip Game",
-    desc: "A fun memory card game built with HTML, CSS & JS where players flip cards to match emojis.",
-    screenshot: "/emoji-flip.png", 
-    liveLink: "https://souravgour-17.github.io/Emoji_flip_game/",
-    codeLink: "https://github.com/souravgour-17/Emoji_flip_game"
-  },
-  {
-    title: "Number Guess Game",
-    desc: "An interactive guessing game where players try to guess the correct number with hints.",
-    screenshot: "/number-guess.png", 
-    liveLink: "https://souravgour-17.github.io/Number-Guess/",
-    codeLink: "https://github.com/souravgour-17/Number-Guess"
-  },
+  
   {
     title: "Gradient Calculator",
     desc: "A stylish calculator with gradient design built using HTML, CSS & JavaScript.",
