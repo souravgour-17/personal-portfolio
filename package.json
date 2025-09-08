@@ -2,7 +2,6 @@
   "name": "folio_v2",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://souravgour-17.github.io/personal-portfolio",
   "dependencies": {
     "framer-motion": "^10.12.16",
     "lucide-react": "^0.257.0",
@@ -17,11 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.3.3"
   },
