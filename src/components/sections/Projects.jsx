@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
 const projects = [
-  {
-    title: "E-Commerce App",
-    desc: "Fullstack e-commerce application - In Progress.",
-    codeLink: "https://github.com/souravgour-17/ecommerce-app",
-    liveLink: null,
-    screenshot: "/ecommerce-app.png"
-  },
+  // {
+  //   title: "E-Commerce App",
+  //   desc: "Fullstack e-commerce application - In Progress.",
+  //   codeLink: "https://github.com/souravgour-17/ecommerce-app",
+  //   liveLink: null,
+  //   screenshot: "/ecommerce-app.png"
+  // },
   {
     title: "Emoji Flip Game",
     desc: "A fun memory card game built with HTML, CSS & JS where players flip cards to match emojis.",
