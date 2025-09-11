@@ -24,7 +24,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.5 }}
         className="text-6xl font-bold mb-4"
       >
-        Hi, I'm <span className="text-yellow-300">Sourav</span>
+        Hi, I'm <span className="text-yellow-300">Sourav Gour</span>
       </motion.h1>
 
       {/* Typewriter Text */}
@@ -32,12 +32,16 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="text-xl max-w-2xl mb-6"
+        className="text-xl max-w-2xl mb-2"
       >
         I'm a{" "}
         <span className="font-semibold text-indigo-500">
           <Typewriter
-            words={["Fullstack Developer", "React & Node.js user", "Web Applicant"]}
+            words={[
+              "MERN Stack Developer",
+              "Full Stack Developer",
+              "React & Node.js Enthusiast"
+            ]}
             loop={0}          
             cursor
             cursorStyle="|"
@@ -48,12 +52,23 @@ export default function Hero() {
         </span>
       </motion.p>
 
+      {/* Short intro line */}
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2 }}
+        className="text-gray-300 max-w-xl mb-6"
+      >
+        Full Stack Development Intern at <span className="text-indigo-400 font-medium">TechCoder Software OPC Pvt. Ltd.</span>  
+        Skilled in building web applications using the MERN stack.
+      </motion.p>
+
       {/* Buttons */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="flex gap-4"
+        className="flex gap-4 flex-wrap justify-center"
       >
         <a
           href="#projects"
@@ -67,6 +82,7 @@ export default function Hero() {
         >
           Hire Me
         </a>
+        
       </motion.div>
     </section>
   );

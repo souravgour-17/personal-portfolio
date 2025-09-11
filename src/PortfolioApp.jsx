@@ -1,9 +1,11 @@
 import React from 'react';
 import Navbar from './components/sections/Navbar';
 import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";  // ✅ Added About
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import FrontendProjects from "./components/sections/FrontendProjects";
+import Certifications from "./components/sections/Certifications"; // ✅ Added Certifications
 import Contact from './components/sections/Contact';
 
 export default function PortfolioApp() {
@@ -12,9 +14,11 @@ export default function PortfolioApp() {
       <Navbar />
       <main className='space-y-20 md:space-y-0'>
         <Hero />
+        <About /> {/* ✅ New About section */}
         <FrontendProjects />
         <Projects />
         <Skills />
+        <Certifications /> {/* ✅ Added Certifications section */}
         <Contact />
       </main>
     </div>
