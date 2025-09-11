@@ -11,7 +11,7 @@ export default function About() {
         <p>
           Hi, I’m <span className="font-semibold text-indigo-500">Sourav Gour</span>, 
           a passionate <span className="font-semibold">MERN Stack Developer</span> and 
-          B.Tech Computer Science student with a strong interest in building modern, 
+          BCA student with a strong interest in building modern, 
           user-friendly, and scalable web applications. I enjoy transforming ideas into 
           real-world projects that combine clean design with powerful functionality.
         </p>
