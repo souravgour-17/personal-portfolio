@@ -1,5 +1,6 @@
-import { Link } from "react-scroll";
 import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { Sun, Moon, Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -18,18 +19,22 @@ export default function Navbar() {
     }
   }, [dark]);
 
+  // Only sections that exist on the homepage
   const links = ["projects", "skills", "contact"];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-4 bg-darkRed/80 backdrop-blur-md shadow-md">
-      <h1 className="text-2xl font-bold tracking-wide cursor-pointer hover:text-marvelRed transition">
+      <RouterLink
+        to="/"
+        className="text-2xl font-bold tracking-wide cursor-pointer hover:text-marvelRed transition"
+      >
         Sourav Gour
-      </h1>
+      </RouterLink>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-6">
         {links.map((item) => (
-          <Link
+          <ScrollLink
             key={item}
             to={item}
             smooth={true}
@@ -40,8 +45,16 @@ export default function Navbar() {
             className="cursor-pointer hover:text-marvelRed transition pb-1"
           >
             {item.charAt(0).toUpperCase() + item.slice(1)}
-          </Link>
+          </ScrollLink>
         ))}
+
+        {/* Certifications → goes to a separate page */}
+        <RouterLink
+          to="/certifications"
+          className="cursor-pointer hover:text-marvelRed transition pb-1"
+        >
+          Certifications
+        </RouterLink>
 
         {/* Resume Button */}
         <a
@@ -79,7 +92,10 @@ export default function Navbar() {
           )}
         </button>
 
-        <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 rounded hover:bg-white/10 transition">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="p-2 rounded hover:bg-white/10 transition"
+        >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
@@ -88,7 +104,7 @@ export default function Navbar() {
       {menuOpen && (
         <div className="absolute top-full left-0 right-0 bg-darkRed/90 backdrop-blur-md flex flex-col items-center md:hidden space-y-4 py-4 z-40">
           {links.map((item) => (
-            <Link
+            <ScrollLink
               key={item}
               to={item}
               smooth={true}
@@ -99,8 +115,17 @@ export default function Navbar() {
               className="cursor-pointer hover:text-marvelRed text-lg transition"
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
-            </Link>
+            </ScrollLink>
           ))}
+
+          {/* Certifications (Router Link) */}
+          <RouterLink
+            to="/certifications"
+            onClick={() => setMenuOpen(false)}
+            className="cursor-pointer hover:text-marvelRed text-lg transition"
+          >
+            Certifications
+          </RouterLink>
 
           {/* Resume Button */}
           <a
