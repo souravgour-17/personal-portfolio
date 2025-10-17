@@ -25,6 +25,13 @@ const projects = [
     screenshot: "/number-guess.png"
   },
   {
+  title: "Weather App",
+  desc: "A simple and responsive weather application built with HTML, CSS, and JavaScript. Users can search for any city or use their geolocation to see the current temperature and weather conditions.",
+  codeLink: "https://github.com/souravgour-17/weather-api",
+  liveLink: "https://souravgour-17.github.io/weather-api/",
+  screenshot: "/Weather_App.png"
+  },
+  {
     title: "Fee Payment App",
     desc: "A complete fee management system built with React and Node.js.",
     codeLink: "https://github.com/souravgour-17/Fee_Payment",
